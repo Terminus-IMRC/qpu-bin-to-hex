@@ -27,4 +27,4 @@ while True:
 	if b>0xffffffffffffffff:
 		sys.exit("%s: error: input value is out of 64-bit unsigned integer range"%sys.argv[0])
 
-	print("0x%08x, 0x%08x,"%((b&0xffffffff00000000)>>32, b&0x00000000ffffffff))
+	print("0x%08x, 0x%08x,"%(b&0x00000000ffffffff,(b&0xffffffff00000000)>>32))
