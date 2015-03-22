@@ -17,6 +17,7 @@ while True:
 	if mn!=-1:
 		s=s[:mn]
 	s=s.replace(" ", "")
+	s=s.replace("\t", "")
 	s=s.replace(",", "")
 
 	if s=="":
